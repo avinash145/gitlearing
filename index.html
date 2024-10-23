@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>git</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="container">
+      <h1>My Notes <img class="pin-note" src="/post-it.png" alt="" /></h1>
+      <form id="noteForm">
+        <textarea
+          id="noteInput"
+          placeholder="Write your note here..."
+          required
+        ></textarea>
+        <button type="submit">Add Note</button>
+      </form>
+      <div id="notesContainer"></div>
+    </div>
+  </body>
 </html>
